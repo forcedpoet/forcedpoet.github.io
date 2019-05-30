@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Forced Poet</title>
-    <link>https://forcedpoet.github.io/tags/</link>
-    <description>Recent content in Tags on Forced Poet</description>
+    <title>Tags on My Yearlong One Poetry a Day</title>
+    <link>https://forcedpoet.gitlab.io/tags/</link>
+    <description>Recent content in Tags on My Yearlong One Poetry a Day</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://forcedpoet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://forcedpoet.gitlab.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -3,68 +3,69 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://forcedpoet.github.io/patterns/kid_in_me/</loc>
+    <loc>https://forcedpoet.gitlab.io/kid_in_me/</loc>
     <lastmod>2019-05-30T23:23:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://forcedpoet.github.io/patterns/</loc>
+    <loc>https://forcedpoet.gitlab.io/</loc>
     <lastmod>2019-05-30T23:23:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://forcedpoet.github.io/patterns/insomnia/</loc>
+    <loc>https://forcedpoet.gitlab.io/posts/insomnia/</loc>
     <lastmod>2019-05-24T21:15:46+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://forcedpoet.github.io/patterns/lonely_cycle/</loc>
-    <lastmod>2019-05-24T21:01:40+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://forcedpoet.github.io/patterns/awakeneing/</loc>
-    <lastmod>2019-05-22T21:01:40+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://forcedpoet.github.io/patterns/ninetofive/</loc>
-    <lastmod>2019-05-22T20:23:31+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://forcedpoet.github.io/patterns/reagent/</loc>
-    <lastmod>2019-05-22T11:40:06+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://forcedpoet.github.io/patterns/writersblock/</loc>
-    <lastmod>2019-05-21T20:53:08+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://forcedpoet.github.io/patterns/procrastinator/</loc>
-    <lastmod>2019-05-16T01:39:44+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://forcedpoet.github.io/</loc>
-    <lastmod>2019-05-15T09:14:57+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://forcedpoet.github.io/patterns/my-opd/</loc>
-    <lastmod>2019-05-15T09:14:57+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://forcedpoet.github.io/categories/</loc>
+    <loc>https://forcedpoet.gitlab.io/posts/</loc>
+    <lastmod>2019-05-24T21:15:46+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://forcedpoet.github.io/tags/</loc>
+    <loc>https://forcedpoet.gitlab.io/posts/lonely_cycle/</loc>
+    <lastmod>2019-05-24T21:01:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://forcedpoet.gitlab.io/posts/awakeneing/</loc>
+    <lastmod>2019-05-22T21:01:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://forcedpoet.gitlab.io/posts/ninetofive/</loc>
+    <lastmod>2019-05-22T20:23:31+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://forcedpoet.gitlab.io/posts/reagent/</loc>
+    <lastmod>2019-05-22T11:40:06+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://forcedpoet.gitlab.io/posts/writersblock/</loc>
+    <lastmod>2019-05-21T20:53:08+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://forcedpoet.gitlab.io/about/</loc>
+    <lastmod>2019-05-16T01:48:41+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://forcedpoet.gitlab.io/posts/procrastinator/</loc>
+    <lastmod>2019-05-16T01:39:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://forcedpoet.gitlab.io/posts/my-opd/</loc>
+    <lastmod>2019-05-15T09:14:57+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://forcedpoet.gitlab.io/tags/</loc>
     <priority>0</priority>
   </url>
   

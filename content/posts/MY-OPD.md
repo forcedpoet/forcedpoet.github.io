@@ -1,13 +1,9 @@
 ---
-layout: post
-title:  "MY OPD"
-date:   2019-05-14 21:34:01 +0530
-categories: jekyll update
+title: "MY OPD"
+date: 2019-05-15T09:14:57+05:30
+tag: 'poetry'
+draft: false
 ---
-
-
-MY OPD  
-======  
   
 My Yearlong One Poem a Day  
 I am athiest still I pray  

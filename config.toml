@@ -1,5 +1,5 @@
 
-baseURL = "https://forcedpoet.gitlab.io/"
+baseURL = "https://forcedpoet.github.io/"
 languageCode = "en-us"
 title = "My Yearlong One Poetry a Day"
 theme = "cupper"

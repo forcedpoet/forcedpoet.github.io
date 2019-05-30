@@ -1,67 +1,170 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Patterns on Cupper</title>
-    <link>https://thepaciellogroup.github.io/cupper/patterns/</link>
-    <description>Recent content in Patterns on Cupper</description>
+    <title>Patterns on Forced Poet</title>
+    <link>https://forcedpoet.github.io/patterns/</link>
+    <description>Recent content in Patterns on Forced Poet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 30 May 2019 23:23:00 +0530</lastBuildDate>
     
-	<atom:link href="https://thepaciellogroup.github.io/cupper/patterns/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://forcedpoet.github.io/patterns/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Installation</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/installation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Kid In Me</title>
+      <link>https://forcedpoet.github.io/patterns/kid_in_me/</link>
+      <pubDate>Thu, 30 May 2019 23:23:00 +0530</pubDate>
       
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/installation/</guid>
-      <description>Cupper is built using the static site engine, Hugo, and NPM. The codebase is available to download on Github. Let&amp;rsquo;s get everything installed step-by-step.
-Install Hugo First you need to install Hugo globally.
-OSX users If you are a Mac user and have Homebrew on your system, installing Hugo is simple:
-brew install hugo Alternatively, you can manually install Hugo from a package. You can verify the installation was successful by typing:</description>
+      <guid>https://forcedpoet.github.io/patterns/kid_in_me/</guid>
+      <description>I have been cherishing Kid in me
+You too have it Inside need to see
+It has gifted me infinite curiosity
+And Taking away deep focusing ability
+I love that innocent Kid in me
+To get something done I need to plea
+Rules of this world are out of his realm
+Often Trivial things tend to overwhelm
+He is gifted with unlimited forgiveness
+because of which mostly causes distress
+which causes great amount of confusion</description>
     </item>
     
     <item>
-      <title>Setup</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Insomnia</title>
+      <link>https://forcedpoet.github.io/patterns/insomnia/</link>
+      <pubDate>Fri, 24 May 2019 21:15:46 +0530</pubDate>
       
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/setup/</guid>
-      <description>By now, you should have followed the  Installation instructions. You should have Hugo and Node installed, and a local copy of a forked version of Cupper. You should also have run npm install in the root of that codebase.
-&amp;ldquo;Cleaning&amp;rdquo; the content folder Before you can start writing documentation, there are a few things still to do in order to get set up. At the moment, your version of Cupper is a facsimile of the original, containing all the content you&amp;rsquo;re reading right now.</description>
+      <guid>https://forcedpoet.github.io/patterns/insomnia/</guid>
+      <description>Try try till you succeed, I keep hearing
+can&amp;rsquo;t fall asleep however I try sleeping
+Got tested with all types of medical tests
+Doctors don&amp;rsquo;t have answers it really frustates
+I tried endlessly surrfing TV channels
+My fingers aches also have strained eyes
+Friend of mine figured our whats the problem
+It is lifstyle which ruined my Circadian rhythm
+Still remember regular parties late night
+By the time they are over sun shined bright</description>
     </item>
     
     <item>
-      <title>Serving</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/serving/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Lonely Cycle</title>
+      <link>https://forcedpoet.github.io/patterns/lonely_cycle/</link>
+      <pubDate>Fri, 24 May 2019 21:01:40 +0530</pubDate>
       
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/serving/</guid>
-      <description>Serving locally While you&amp;rsquo;re creating content for your project, you&amp;rsquo;ll probably want to see what the finished product looks like. Fortunately, Cupper is easy to serve locally using the serve command:
-npm run serve This will serve your working project from localhost:1313. Whenever you make changes to your files, the site will automatically rebuild. No need to refresh the web page!
-Publishing on Github Pages Cupper creates a /docs folder containing the latest version of your site whenever you do an npm run build or a git commit.</description>
+      <guid>https://forcedpoet.github.io/patterns/lonely_cycle/</guid>
+      <description>I am lonely in corner of garage
+is it you comming or another mirage
+I often dream going out with you
+I am sure you feel the same too
+I remember early days of our relationship
+it was love at first sight or rather peep
+Looking through hole of that crowded werehouse
+I was eagely waiting to break chains go loose
+I cherish those memories of early days
+your being possesive about me all ways</description>
     </item>
     
     <item>
-      <title>Printing</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/printing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Awakeneing</title>
+      <link>https://forcedpoet.github.io/patterns/awakeneing/</link>
+      <pubDate>Wed, 22 May 2019 21:01:40 +0530</pubDate>
       
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/printing/</guid>
-      <description>Cupper&amp;rsquo;s output site includes a one-page  Print version of the generated library, available at /print-version. So, if your library base URL is https://yourName.github.io/your-library, you can print the whole library — to PDF if wanted — from the following address:
-https://yourName.github.io/your-library/print-version     Print styles are also provided for individual pattern pages so, if you wanted to print off a single pattern document, you can!   </description>
+      <guid>https://forcedpoet.github.io/patterns/awakeneing/</guid>
+      <description>Its not pleasing but its important
+snoozing alarm every day makes it redundant
+simmilar in life realising
+there is problem is&amp;rsquo;t pleasing
+In that moment life takes U turn
+shatters dreams like earthen urn
+we have tendancy of shooting messanger
+so we distract ourself running farther
+this is really is worse trick
+as clock doesn&amp;rsquo;t stop to tick
+do we really feel better then
+may be yes that is fleeing from pain</description>
     </item>
     
     <item>
-      <title>Updating Cupper</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/updating/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>NineToFive</title>
+      <link>https://forcedpoet.github.io/patterns/ninetofive/</link>
+      <pubDate>Wed, 22 May 2019 20:23:31 +0530</pubDate>
       
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/updating/</guid>
-      <description>The core of Cupper&amp;rsquo;s functionality is in its Hugo theme, also called Cupper. This is found in the theme folder.
-* content * docs * lib * snippets * static * themes * cupper  Do not &amp;ldquo;hack the core&amp;rdquo;. If you have any issues with Cupper, please report them to the Cupper Github repository and they will be dealt with ASAP.
-Cupper is undergoing constant development, so keep an eye out for new releases.</description>
+      <guid>https://forcedpoet.github.io/patterns/ninetofive/</guid>
+      <description>Yes I work at Nine to Five
+pobably I am sleep deprive
+I have no one to blame for this
+tired of chasing that comp increase
+I remember how I have started as a fresher
+full of hopes and feeling hell lot better
+out of collage I was eager to work
+good work was sufficient enough perk
+As I was burdoned with more and more of it
+there came one point where I coudn&amp;rsquo;t take it</description>
+    </item>
+    
+    <item>
+      <title>Catalyst</title>
+      <link>https://forcedpoet.github.io/patterns/reagent/</link>
+      <pubDate>Wed, 22 May 2019 11:40:06 +0530</pubDate>
+      
+      <guid>https://forcedpoet.github.io/patterns/reagent/</guid>
+      <description>You are like a catalyst in chemical reaction
+Helping speedup the process without doing any action
+Scattered were the words slowly attraction commence
+As Rays of light scattred,concentrate on spot by Lense
+they gather together , caused by mere your presence
+Like some magic trick they suddlenly starts making sense
+I am really unsure of its origin wonder they come whence
+As coagulated particles gather near bottom and precipitate
+Words kept poping my head, having a very peculiar kind of trait</description>
+    </item>
+    
+    <item>
+      <title>Writers Block</title>
+      <link>https://forcedpoet.github.io/patterns/writersblock/</link>
+      <pubDate>Tue, 21 May 2019 20:53:08 +0530</pubDate>
+      
+      <guid>https://forcedpoet.github.io/patterns/writersblock/</guid>
+      <description>First time in Little Life, I hit writers Block
+Feeling suffocating as, on chest I have a rock
+Crowding inside I have words, Choking me more
+I wish to vent them, out of chest I could bore
+this is wierd feeling difficult to express
+more I try it, more I get feeling of stress
+I know the words originate from brain&amp;rsquo;s some part
+they travel all the way down by train of thought</description>
+    </item>
+    
+    <item>
+      <title>Procrastinator</title>
+      <link>https://forcedpoet.github.io/patterns/procrastinator/</link>
+      <pubDate>Thu, 16 May 2019 01:39:44 +0530</pubDate>
+      
+      <guid>https://forcedpoet.github.io/patterns/procrastinator/</guid>
+      <description>I am proud of me, being procrastinator
+Its just a trait, not worse or better
+really I don&amp;rsquo;t delay , just choosy about whom to cater
+I planned to explain everything, but will do that later</description>
+    </item>
+    
+    <item>
+      <title>MY OPD</title>
+      <link>https://forcedpoet.github.io/patterns/my-opd/</link>
+      <pubDate>Wed, 15 May 2019 09:14:57 +0530</pubDate>
+      
+      <guid>https://forcedpoet.github.io/patterns/my-opd/</guid>
+      <description>My Yearlong One Poem a Day
+I am athiest still I pray
+Good or bad whatever it may
+there&amp;rsquo;ll be differant shades of gray
+Path is unknown and its dark
+cause of procrastination I always park
+or days when I don&amp;rsquo;t feel that spark
+Still I know I will hit three Sixty Five mark
+Doing for 21 days Makes it your habbit
+To master you spend 10000 hours doing it</description>
     </item>
     
   </channel>

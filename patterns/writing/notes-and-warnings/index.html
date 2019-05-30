@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.55.6" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/">
+    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/patterns/writing/notes-and-warnings/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-72x72.png">
@@ -31,11 +30,9 @@
     </style>
     <title>
       
-  Cupper
-
+        Notes &amp; warnings | Cupper
+      
     </title>
-    
-      <link rel="manifest" href="manifest.json">
     
   </head>
   <body>
@@ -241,7 +238,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://thepaciellogroup.github.io/cupper/patterns/writing/notes-and-warnings/" >
+                              <a href="https://thepaciellogroup.github.io/cupper/patterns/writing/notes-and-warnings/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -384,22 +381,88 @@
         <div>
           
   <main id="main">
-    <h1>The Cupper Documentation Builder</h1>
-    <p>Welcome to <strong>Cupper</strong>: a documentation builder for inclusive designers and those trying to be inclusive designers. These are <strong>Cupper&rsquo;s</strong> docs, but they are also an example of a site built with <strong>Cupper</strong>. Here are some of its features:</p>
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Notes &amp; warnings
+    </h1>
+    
+    
+      
 
-<div class="ticks">
-  
-* Built with [Hugo](https://gohugo.io/), so easy to structure content and fast to compile it
-* Available to read offline, as a [Progressive Web App](https://developers.google.com/web/progressive-web-apps/)
-* Include encapsulated live demos, inline with your markdown, [using Shadow DOM](https://www.smashingmagazine.com/2017/07/pattern-libraries-in-markdown/)
-* Quickly include WCAG and [Inclusive Design Principles](http://inclusivedesignprinciples.org/) references
-* A responsive, screen reader and keyboard accessible static site as output
-* Automated Github Pages deployment
-* Includes a single-page printable version suitable for PDF conversion
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#notes">
+            Notes
+          </a>
+        </li>
+      
+        <li>
+          <a href="#warnings">
+            Warnings
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
 
-</div>
 
-<p>To get started, take a look at <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/installation/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Installation</a>.</p>
+    
+    
+
+<p><strong>Cupper</strong> acknowledges that simple markdown is limiting when it comes to writing compelling documentation, so it provides a number of &ldquo;shortcodes&rdquo;. Shortcodes offer a simple syntax for including rich content. For example, <strong>Cupper</strong> provides shortcodes for including notes and warnings.</p>
+
+<h2 id="notes">Notes</h2>
+
+<p>You may wish to pick out some content in your pattern&rsquo;s documentation as a note — an aside to the main thrust of the pattern&rsquo;s description. This is possible using the following syntax:</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% note %}}
+This is a note! It's something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.
+&#x7b;{% /note %}}
+</code></pre>
+
+
+<p>Notes render like this:</p>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+This is a note! It's something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.
+
+  </div>
+</aside>
+
+<h2 id="warnings">Warnings</h2>
+
+<p>Warnings are like notes, but with more urgency.</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% warning %}}
+This is a warning! It's about something the reader should be careful to do or to avoid doing. Use warnings when something could go wrong.
+&#x7b;{% /warning %}}
+</code></pre>
+
+
+<p>Warnings render like this:</p>
+
+<aside aria-label="warning" class="note warning">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 48.430474 41.646302" focusable="false">
+      <use xlink:href="#warning"></use>
+    </svg>
+    
+This is a warning! It's about something the reader should be careful to do or to avoid doing. Use warnings when something could go wrong.
+
+  </div>
+</aside>
 
   </main>
 
@@ -418,8 +481,6 @@
     </div>
     <script src="https://thepaciellogroup.github.io/cupper/js/prism.js"></script>
     <script src="https://thepaciellogroup.github.io/cupper/js/dom-scripts.js"></script>
-    
-      <script src="https://thepaciellogroup.github.io/cupper/js/service-worker-registration.js"></script>
     
   </body>
 </html>

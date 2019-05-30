@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.55.6" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/">
+    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/patterns/serving/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-72x72.png">
@@ -31,11 +30,9 @@
     </style>
     <title>
       
-  Cupper
-
+        Serving | Cupper
+      
     </title>
-    
-      <link rel="manifest" href="manifest.json">
     
   </head>
   <body>
@@ -182,7 +179,7 @@
                       </li>
                     
                       <li class="pattern">
-                        <a href="https://thepaciellogroup.github.io/cupper/patterns/serving/" >
+                        <a href="https://thepaciellogroup.github.io/cupper/patterns/serving/" aria-current="page">
                           <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
                             <use xlink:href="#bookmark"></use>
                           </svg>
@@ -384,22 +381,67 @@
         <div>
           
   <main id="main">
-    <h1>The Cupper Documentation Builder</h1>
-    <p>Welcome to <strong>Cupper</strong>: a documentation builder for inclusive designers and those trying to be inclusive designers. These are <strong>Cupper&rsquo;s</strong> docs, but they are also an example of a site built with <strong>Cupper</strong>. Here are some of its features:</p>
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Serving
+    </h1>
+    
+    
+      
 
-<div class="ticks">
-  
-* Built with [Hugo](https://gohugo.io/), so easy to structure content and fast to compile it
-* Available to read offline, as a [Progressive Web App](https://developers.google.com/web/progressive-web-apps/)
-* Include encapsulated live demos, inline with your markdown, [using Shadow DOM](https://www.smashingmagazine.com/2017/07/pattern-libraries-in-markdown/)
-* Quickly include WCAG and [Inclusive Design Principles](http://inclusivedesignprinciples.org/) references
-* A responsive, screen reader and keyboard accessible static site as output
-* Automated Github Pages deployment
-* Includes a single-page printable version suitable for PDF conversion
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#serving-locally">
+            Serving locally
+          </a>
+        </li>
+      
+        <li>
+          <a href="#publishing-on-github-pages">
+            Publishing on Github Pages
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
 
-</div>
 
-<p>To get started, take a look at <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/installation/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Installation</a>.</p>
+    
+    
+
+<h2 id="serving-locally">Serving locally</h2>
+
+<p>While you&rsquo;re creating content for your project, you&rsquo;ll probably want to see what the finished product looks like. Fortunately, <strong>Cupper</strong> is easy to serve locally using the <code>serve</code> command:</p>
+
+<pre class="cmd"><code>npm run serve</code></pre>
+
+
+<p>This will serve your working project from <code>localhost:1313</code>. Whenever you make changes to your files, the site will automatically rebuild. No need to refresh the web page!</p>
+
+<h2 id="publishing-on-github-pages">Publishing on Github Pages</h2>
+
+<p><strong>Cupper</strong> creates a <code>/docs</code> folder containing the latest version of your site whenever you do an <code>npm run build</code> or a <code>git commit</code>. So long as you forked the <strong>Cupper</strong> repository when making your own version (see <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/setup/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Setup</a>), whenever you push to master, you will also be updating the site found at your Github Pages URL.</p>
+
+<p>This URL will be in the following format:</p>
+
+<pre><code>[your user name].github.io/[your library repo name]
+</code></pre>
+
+<p>You&rsquo;ll also need to add this value to your <code>config.toml</code> file as the <code>baseURL</code>. For <strong>Cupper</strong>&rsquo;s own documentation it looks like the following. Just overwrite it.</p>
+
+<pre><code>baseURL = &quot;https://thepaciellogroup.github.io/cupper/&quot;
+</code></pre>
+
+<h3 id="set-the-publishing-source">Set the publishing source</h3>
+
+<p>You will find the <code>docs</code> folder is not automatically setup as the publishing source, even when forking the repo. In which case, you must set it under  <strong>Settings → Github Pages → Source</strong> in the web interface.</p>
+
+<p><img src="https://thepaciellogroup.github.io/cupper/images/serve_from_docs.png" alt="The publishing source dropdown menu on Github" /></p>
 
   </main>
 
@@ -418,8 +460,6 @@
     </div>
     <script src="https://thepaciellogroup.github.io/cupper/js/prism.js"></script>
     <script src="https://thepaciellogroup.github.io/cupper/js/dom-scripts.js"></script>
-    
-      <script src="https://thepaciellogroup.github.io/cupper/js/service-worker-registration.js"></script>
     
   </body>
 </html>

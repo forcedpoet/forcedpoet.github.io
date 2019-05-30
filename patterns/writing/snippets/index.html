@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.55.6" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/">
+    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/patterns/writing/snippets/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-72x72.png">
@@ -31,11 +30,9 @@
     </style>
     <title>
       
-  Cupper
-
+        Snippets | Cupper
+      
     </title>
-    
-      <link rel="manifest" href="manifest.json">
     
   </head>
   <body>
@@ -259,7 +256,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://thepaciellogroup.github.io/cupper/patterns/writing/snippets/" >
+                              <a href="https://thepaciellogroup.github.io/cupper/patterns/writing/snippets/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -384,22 +381,58 @@
         <div>
           
   <main id="main">
-    <h1>The Cupper Documentation Builder</h1>
-    <p>Welcome to <strong>Cupper</strong>: a documentation builder for inclusive designers and those trying to be inclusive designers. These are <strong>Cupper&rsquo;s</strong> docs, but they are also an example of a site built with <strong>Cupper</strong>. Here are some of its features:</p>
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Snippets
+    </h1>
+    
+    
+      
 
-<div class="ticks">
-  
-* Built with [Hugo](https://gohugo.io/), so easy to structure content and fast to compile it
-* Available to read offline, as a [Progressive Web App](https://developers.google.com/web/progressive-web-apps/)
-* Include encapsulated live demos, inline with your markdown, [using Shadow DOM](https://www.smashingmagazine.com/2017/07/pattern-libraries-in-markdown/)
-* Quickly include WCAG and [Inclusive Design Principles](http://inclusivedesignprinciples.org/) references
-* A responsive, screen reader and keyboard accessible static site as output
-* Automated Github Pages deployment
-* Includes a single-page printable version suitable for PDF conversion
 
-</div>
+    
+    
 
-<p>To get started, take a look at <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/installation/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Installation</a>.</p>
+<p>A lot of the time, your larger documentation patterns will share some common techniques and utilities. For this reason, <strong>Cupper</strong> lets you save snippets of markdown in a <strong>snippets</strong> folder, alongside the main content folder.</p>
+
+<p>The example <code>visually-hidden.md</code> snippet describes the CSS needed to create content that is visually hidden but still available to screen readers. Since this is a technique/utility you are likely to use often, it&rsquo;s nice to be able to just drop a snippet into your markdown content. The <code>snippet</code> shortcode lets you do exactly that:</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% snippet file="visually-hidden.md" %}}
+</code></pre>
+
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+To make your snippets truly reusable, try to write them in such a way that they make sense independent of surrounding text, a little bit like this note does.
+
+  </div>
+</aside>
+
+<h2 id="visually-hidden-snippet">Visually hidden snippet</h2>
+
+<!-- snippet -->
+
+<p>The <code>visually-hidden</code> utility class uses a set of special properties to hide content visually without making it unavailable to screen readers and other non-visual user agents. The class is defined like this:</p>
+
+<pre><code class="language-CSS">.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden !important;
+}
+</code></pre>
+
+<p>Use it sparingly since, in most cases, what is identified non-visually should also be presented visually. Bear in mind that not all screen reader users are blind users.</p>
 
   </main>
 
@@ -418,8 +451,6 @@
     </div>
     <script src="https://thepaciellogroup.github.io/cupper/js/prism.js"></script>
     <script src="https://thepaciellogroup.github.io/cupper/js/dom-scripts.js"></script>
-    
-      <script src="https://thepaciellogroup.github.io/cupper/js/service-worker-registration.js"></script>
     
   </body>
 </html>

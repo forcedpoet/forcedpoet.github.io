@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.55.6" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/">
+    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/patterns/setup/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-72x72.png">
@@ -31,11 +30,9 @@
     </style>
     <title>
       
-  Cupper
-
+        Setup | Cupper
+      
     </title>
-    
-      <link rel="manifest" href="manifest.json">
     
   </head>
   <body>
@@ -173,7 +170,7 @@
                       </li>
                     
                       <li class="pattern">
-                        <a href="https://thepaciellogroup.github.io/cupper/patterns/setup/" >
+                        <a href="https://thepaciellogroup.github.io/cupper/patterns/setup/" aria-current="page">
                           <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
                             <use xlink:href="#bookmark"></use>
                           </svg>
@@ -384,22 +381,138 @@
         <div>
           
   <main id="main">
-    <h1>The Cupper Documentation Builder</h1>
-    <p>Welcome to <strong>Cupper</strong>: a documentation builder for inclusive designers and those trying to be inclusive designers. These are <strong>Cupper&rsquo;s</strong> docs, but they are also an example of a site built with <strong>Cupper</strong>. Here are some of its features:</p>
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Setup
+    </h1>
+    
+    
+      
 
-<div class="ticks">
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#cleaning-the-content-folder">
+            “Cleaning” the content folder
+          </a>
+        </li>
+      
+        <li>
+          <a href="#the-config-file">
+            The config file
+          </a>
+        </li>
+      
+        <li>
+          <a href="#the-web-app-manifest">
+            The Web App Manifest
+          </a>
+        </li>
+      
+        <li>
+          <a href="#including-a-logo">
+            Including a logo
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<p>By now, you should have followed the <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/installation/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Installation</a> instructions. You should have Hugo and Node installed, and a local copy of a forked version of <strong>Cupper</strong>. You should also have run <code>npm install</code> in the root of that codebase.</p>
+
+<h2 id="cleaning-the-content-folder">&ldquo;Cleaning&rdquo; the content folder</h2>
+
+<p>Before you can start writing documentation, there are a few things still to do in order to get set up. At the moment, your version of <strong>Cupper</strong> is a facsimile of the original, containing all the content you&rsquo;re reading right now. We want to delete that content and replace it with some starter content. There&rsquo;s a simple <code>clean</code> command for this.</p>
+
+<aside aria-label="warning" class="note warning">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 48.430474 41.646302" focusable="false">
+      <use xlink:href="#warning"></use>
+    </svg>
+    
+If you are contributing to an existing **Cupper** library, do not run the following command. It will delete all of the patterns in that library. The `clean` command is just for libraries that you are starting from scratch.
+
+  </div>
+</aside>
+
+<pre class="cmd"><code>  npm run clean</code></pre>
+
+
+<p>This will leave your <code>content</code> folder with just an <code>_index.md</code> file and a <code>patterns</code> folder containing a single demonstration pattern file. Individual content pages in <strong>Cupper</strong> are referred to as &ldquo;patterns&rdquo; — think pattern libraries). Find out more about these in <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/writing/project-structure/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Project structure</a>.</p>
+
+<h2 id="the-config-file">The config file</h2>
+
+<p>You&rsquo;ll also want to name your project and configure one or two other things in the <code>config.toml</code> file that&rsquo;s found at the root of your project. Here&rsquo;s how that file looks:</p>
+
+<pre class="language-html"><code class="language-html" data-codeblock-shortcode>
+languageCode = "en-us"
+title = "Cupper"
+baseURL = "https://thepaciellogroup.github.io/cupper/"
+theme = "cupper"
+
+[params]
+  description = "Documentation for the **Cupper** documentation builder. This documentation is constructed using the builder itself."
+  codePenUser = "Heydon"
+</code></pre>
+
+
+<ul>
+<li><strong>title</strong> — This is the project&rsquo;s name, like &ldquo;Megacorp 5000 Pattern Library&rdquo; or &ldquo;Assplosion.js Documentation&rdquo;. For <strong>Cupper&rsquo;s</strong> own version of <strong>Cupper</strong>, the <code>title</code> is simply <em>Cupper</em> :-)</li>
+<li><strong>baseURL</strong> — This is the root of the live site. Typically you will publish the site to Github Pages, so this should be the base URL for your Github Pages site.</li>
+<li><strong>theme</strong> — This is the theme the library is using. Don&rsquo;t change this from &ldquo;cupper&rdquo;.</li>
+<li><strong>description</strong> — This is a short description of your documentation project and comes under the logo. You can include markdown syntax here, like <em>&#x002a;&#x002a;Cupper&#x002a;&#x002a;</em> in the above example for making the name of the library bold.</li>
+<li><strong>codePenUser</strong> — If you want to embed codePens in your pattern files, you need to supply a codePen username here.</li>
+</ul>
+
+<h2 id="the-web-app-manifest">The Web App Manifest</h2>
+
+<p><strong>Cupper</strong> projects work as progressive web applications, meaning users can save them to their home screen and read them offline. The web app manifest, found at the root of the <code>static</code> folder, defines names and icons for the app. You&rsquo;ll probably want to open <code>/static/manifest.json</code> and personalize the <code>name</code> and <code>short_name</code> values.</p>
+
+<pre><code>{
+ &quot;name&quot;: &quot;Cupper Documentation Builder&quot;,
+ &quot;short_name&quot;: &quot;Cupper Docs&quot;,
+ &quot;icons&quot;: [
+  {...
+</code></pre>
+
+<figure role="group" aria-describedby="caption-523eedbc53c852c09a6b33234e5e3786">
   
-* Built with [Hugo](https://gohugo.io/), so easy to structure content and fast to compile it
-* Available to read offline, as a [Progressive Web App](https://developers.google.com/web/progressive-web-apps/)
-* Include encapsulated live demos, inline with your markdown, [using Shadow DOM](https://www.smashingmagazine.com/2017/07/pattern-libraries-in-markdown/)
-* Quickly include WCAG and [Inclusive Design Principles](http://inclusivedesignprinciples.org/) references
-* A responsive, screen reader and keyboard accessible static site as output
-* Automated Github Pages deployment
-* Includes a single-page printable version suitable for PDF conversion
+![Teacup Cupper app icon with Cupper Docs written underneath](/images/samsung_homescreen.jpg)
 
-</div>
+  <figcaption id="caption-523eedbc53c852c09a6b33234e5e3786">
+    Cupper&rsquo;s Docs, with <code>short_name</code> displayed, available from the homescreen of a Samsung/Android phone.
+  </figcaption>
+</figure>
 
-<p>To get started, take a look at <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/installation/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Installation</a>.</p>
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+The `short_name` value refers to the text that appears under the icon on your homescreen. As the name suggests, it should be as short as possible to fit well (12 characters or fewer is ideal).
+
+  </div>
+</aside>
+
+<h2 id="including-a-logo">Including a logo</h2>
+
+<p>In the <code>images/static</code> folder, you&rsquo;ll find a <code>logo.svg</code> file. Replace this file with your own company or project logo, under the same file name. Currently, only SVG is supported this easily because SVG is the superior format for logos. However, if you must use a different format, you can open up the <code>themes/cupper/layouts/_default/baseof.html</code> file and edit the image reference:</p>
+
+<pre><code class="language-html">&lt;a class=&quot;logo&quot; href=&quot;/&quot; aria-label=&quot;{{ .Site.Title }} pattern library home page&quot;&gt;
+  &lt;img src=&quot;{{ &quot;images/logo.svg&quot; | absURL }}&quot; alt=&quot;&quot;&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p>Now that your logo is in place, everything should be ready. Where next? You can learn about <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/writing/project-structure/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Project structure</a> to help you get writing, or find out how to serve the site locally and on Github Pages in <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/serving/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Serving</a>.</p>
 
   </main>
 
@@ -418,8 +531,6 @@
     </div>
     <script src="https://thepaciellogroup.github.io/cupper/js/prism.js"></script>
     <script src="https://thepaciellogroup.github.io/cupper/js/dom-scripts.js"></script>
-    
-      <script src="https://thepaciellogroup.github.io/cupper/js/service-worker-registration.js"></script>
     
   </body>
 </html>

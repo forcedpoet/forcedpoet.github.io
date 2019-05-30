@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.55.6" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/">
+    <link rel="canonical" href="https://thepaciellogroup.github.io/cupper/patterns/media/including-images/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://thepaciellogroup.github.io/cupper/images/apple-touch-icon-72x72.png">
@@ -31,11 +30,9 @@
     </style>
     <title>
       
-  Cupper
-
+        Including images | Cupper
+      
     </title>
-    
-      <link rel="manifest" href="manifest.json">
     
   </head>
   <body>
@@ -284,7 +281,7 @@
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://thepaciellogroup.github.io/cupper/patterns/media/including-images/" >
+                              <a href="https://thepaciellogroup.github.io/cupper/patterns/media/including-images/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -384,22 +381,79 @@
         <div>
           
   <main id="main">
-    <h1>The Cupper Documentation Builder</h1>
-    <p>Welcome to <strong>Cupper</strong>: a documentation builder for inclusive designers and those trying to be inclusive designers. These are <strong>Cupper&rsquo;s</strong> docs, but they are also an example of a site built with <strong>Cupper</strong>. Here are some of its features:</p>
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Including images
+    </h1>
+    
+    
+      
 
-<div class="ticks">
+
+    
+    
+
+<p>From time to time, you&rsquo;ll be wanting to include images illustrating the documented pattern in hand. Images live in the static folder, which is a sibling of the <code>/content</code> folder you&rsquo;ll be mostly working in.</p>
+
+<div class="file-tree">
   
-* Built with [Hugo](https://gohugo.io/), so easy to structure content and fast to compile it
-* Available to read offline, as a [Progressive Web App](https://developers.google.com/web/progressive-web-apps/)
-* Include encapsulated live demos, inline with your markdown, [using Shadow DOM](https://www.smashingmagazine.com/2017/07/pattern-libraries-in-markdown/)
-* Quickly include WCAG and [Inclusive Design Principles](http://inclusivedesignprinciples.org/) references
-* A responsive, screen reader and keyboard accessible static site as output
-* Automated Github Pages deployment
-* Includes a single-page printable version suitable for PDF conversion
+* content
+* static
+    * images
+        * logo.png
+        * menu-button.gif
 
 </div>
 
-<p>To get started, take a look at <a class="pattern-link" href="https://thepaciellogroup.github.io/cupper/patterns/installation/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Installation</a>.</p>
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+When you first make a copy of **Cupper**, **Cupper's** own logo will be included. You should replace this with your own company or project logo.
+
+  </div>
+</aside>
+
+<p>The path to the <code>/images</code> folder should begin with a forward slash, so include that when referencing images in your markdown.</p>
+
+<pre><code>![Global Megacorp Ltd](/images/logo.png)
+</code></pre>
+
+<h2 id="figures">Figures</h2>
+
+<p>Sometimes you will want to include a caption with your illustration. This is what the <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements are for. However, <strong>Cupper</strong> doesn&rsquo;t ask you to code all that manually. A special shortcode is provided, which takes a <code>caption</code> parameter. Note that the image markdown is provided between the opening and closing shortcode tags, and that you can use markdown syntax in the <code>caption</code> value.</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% figure caption="A design system that uses a bad code example as a **single source of truth** only serves to proliferate bad code." %}}
+![Diagram of a design pattern represented by a turd emoji begetting three bad implementations](/images/bad_design_system.png)
+&#x7b;{% /figure %}}
+</code></pre>
+
+
+<p>This will output the following. Note the automatically incremented <strong>Figure</strong> number.</p>
+
+<figure role="group" aria-describedby="caption-e259e3056337abf60723ee4eb78ed9b6">
+  
+![Diagram of a design pattern represented by a turd emoji begetting three bad implementations](/images/bad_design_system.png)
+
+  <figcaption id="caption-e259e3056337abf60723ee4eb78ed9b6">
+    A design system that uses a bad code example as a <strong>single source of truth</strong> only serves to proliferate bad code.
+  </figcaption>
+</figure>
+
+<p>The generated markup includes special provisions for assistive technology support:</p>
+
+<pre><code class="language-html">&lt;figure role=&quot;group&quot; aria-describedby=&quot;caption-5fbafefe946c724e7a5d3d2d447a8684&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;http://localhost:1313/images/bad_design_system.png&quot; alt=&quot;Diagram of a design pattern represented by a turd emoji begetting three bad implementations&quot;&gt;&lt;/p&gt;
+  &lt;figcaption id=&quot;caption-5fbafefe946c724e7a5d3d2d447a8684&quot;&gt;
+    A design system that uses a bad code example as a &lt;strong&gt;single source of truth&lt;/strong&gt; only serves to proliferate bad code.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
 
   </main>
 
@@ -418,8 +472,6 @@
     </div>
     <script src="https://thepaciellogroup.github.io/cupper/js/prism.js"></script>
     <script src="https://thepaciellogroup.github.io/cupper/js/dom-scripts.js"></script>
-    
-      <script src="https://thepaciellogroup.github.io/cupper/js/service-worker-registration.js"></script>
     
   </body>
 </html>
